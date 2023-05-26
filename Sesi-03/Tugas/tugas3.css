@@ -1,55 +1,133 @@
-html {
-  background-color: aliceblue;
-}
-
+/* Body Styles */
 body {
   margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
 }
 
+/* Header Styles */
 nav {
-  background-color: white;
+  background-color: #ffffff;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 nav ul {
   display: flex;
   justify-content: flex-end;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 nav ul li {
-  list-style: none;
-  margin: 20px 12px;
+  margin: 0 12px;
 }
 
 nav ul li a {
   text-decoration: none;
-  color: #000000;
+  color: #333333;
   text-transform: uppercase;
-  padding: 6px;
+  font-weight: bold;
+  padding: 6px 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
 }
 
 nav ul li a:hover {
-  background-color: aliceblue;
+  background-color: #333333;
+  color: #ffffff;
 }
 
-section {
-  margin: 20px;
+/* Profile Section Styles */
+#profile {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-form {
-  background-color: white;
+.profile-photo img {
+  width: 150px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.profile-text {
+  color: #333333;
+}
+
+.profile-text h1 {
+  font-size: 32px;
+  margin: 0;
+}
+
+.profile-text h2 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.action button {
+  margin-right: 10px;
+  padding: 10px 20px;
+  background-color: #333333;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.action button:hover {
+  background-color: #666666;
+}
+
+/* Detail Section Styles */
+#detail {
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table td {
+  padding: 8px;
+  border-bottom: 1px solid #dddddd;
+}
+
+/* Form Styles */
+section form {
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
 }
 
 form input {
   width: 100%;
-  margin-bottom: 16px;
+  padding: 10px;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  margin-bottom: 12px;
 }
 
 form input[type="submit"] {
-  margin: 0;
-  background-color: green;
-  color: white;
-  text-transform: uppercase;
-  text-align: center;
+  background-color: #333333;
+  color: #ffffff;
+  cursor: pointer;
 }
 
-/* tambahkan CSS untuk section profile disini */
+form input[type="submit"]:hover {
+  background-color: #666666;
+}
