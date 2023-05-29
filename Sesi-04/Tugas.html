@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritma Menghitung Luas dan Keliling Lingkaran</title>
+</head>
+<body>
+    <h1>Algoritma Menghitung Luas dan Keliling Lingkaran</h1>
+
+    <p>Rumus Keliling Lingkaran <br/> 
+        2 * phi * r<br/>
+
+        Rumus Luas Lingkaran<br/>
+        phi * r kuadrat
+    </p>
+
+    <label for="radius">Masukkan panjang jari-jari lingkaran:</label>
+    <input type="number" id="radius">
+    <button onclick="calculate()">Hitung</button>
+
+    <h2 id="resultTitle" style="display: none;">Hasil Kalkulasi:</h2>
+    <p id="resultLuas" style="display: none;"></p>
+    <p id="resultKeliling" style="display: none;"></p>
+
+    <script>
+        function calculate() {
+            var r = parseFloat(document.getElementById("radius").value);
+
+            var luas = Math.PI * r * r;
+            var keliling = 2 * Math.PI * r;
+
+            document.getElementById("resultTitle").style.display = "block";
+            document.getElementById("resultLuas").style.display = "block";
+            document.getElementById("resultKeliling").style.display = "block";
+
+            document.getElementById("resultLuas").innerHTML = "Luas lingkaran dengan jari-jari " + r + " adalah: " + luas.toFixed(2);
+            document.getElementById("resultKeliling").innerHTML = "Keliling lingkaran dengan jari-jari " + r + " adalah: " + keliling.toFixed(2);
+        }
+    </script>
+
+
+</body>
+</html>
