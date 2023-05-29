@@ -1,0 +1,21 @@
+
+    Flow :
+    1. Pastikan kipas terhubung dengan sumber daya listrik:
+
+    2. Periksa tombol atau saklar pengatur daya pada kipas:
+
+    3. Nyalakan kipas dengan menekan kecepatan putaran kipas yaitu 1 - 3:
+
+    4. Matika kipas dengan cara menekan angka 0 jika sudah tidak digunakan:
+    
+    pseudocode :
+if (kipas angin == "terhubng ke listrik") :
+    echo "1. sudah terhubung ke listrik"
+else 
+    (kipas angin == "Kipas Mati")
+
+if (kipas angin == menyala)
+    echo " Tekan salah satu tombol 1, 2, 3 "
+else
+    (kipas angin == Kipas angin Rusak)
+    
