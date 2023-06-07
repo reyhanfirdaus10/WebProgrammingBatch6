@@ -1,0 +1,52 @@
+body {
+  min-height: 2000px;
+}
+.jumbotron {
+  padding-top: 8rem;
+  background-color: #e2edff;
+}
+
+#projects {
+  background-color: #ffffff;
+}
+
+.card {
+  background-color: #e2edff;
+  height: 100%;
+}
+
+.card-img-top {
+  object-fit: unset;
+  height: 300px;
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card-title {
+  text-align: center;
+}
+.card-text {
+  text-align: center;
+}
+
+.btn-primary {
+  margin: 0 auto;
+}
+#skills {
+  background-color: #e2edff;
+}
+#contact {
+  background-color: #e2edff;
+}
+section {
+  padding-top: 5rem;
+}
+.social-icons {
+  margin-top: 20px;
+}
+
+.social-icons a {
+  margin-right: 10px;
+}
